@@ -1,0 +1,49 @@
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.udi.taskmanager.MapsActivity2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:id="@+id/btnGo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Save and return"
+        android:id="@+id/btnSave"
+        android:layout_weight="0.31"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="42dp"
+        android:layout_alignEnd="@+id/btnGo"
+        android:layout_toEndOf="@+id/btnCancel" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/btnCancel"
+        android:layout_weight="0.38"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/btnSave"
+        android:layout_alignTop="@+id/btnSave" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etToSreach"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btnGo" />
+
+</RelativeLayout>
